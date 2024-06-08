@@ -12,13 +12,18 @@
 }
 
 .hero-txt h1 {
-	font-size: 2rem;
-	margin-bottom: 0.5rem;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
 }
 
 .hero-txt p {
+	width: 60%;
+	margin: 0 auto;
 	font-family: "indie flower", cursive;
 	font-size: 1.2rem;
+	background: white;
+	color: black;
+	border: 2px solid black;
 }
 
 .hero-image-wrapper {

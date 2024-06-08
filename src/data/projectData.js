@@ -34,7 +34,7 @@ const projectData = [
 		imageUrl: logoMuseum,
 		githubUrl: "https://github.com/adakeita/communitymuseum",
 		liveUrl: "https://communitymuseum.netlify.app/",
-		stack: "HTML, CSS, JS.",
+		stack: "HTML, CSS.",
 	},
 
 	{

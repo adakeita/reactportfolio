@@ -126,3 +126,9 @@ h4 {
 #caption {
 	text-align: center;
 }
+
+@media (min-width: 1155px) {
+	.main-content {
+		background-size: cover;
+	}
+}
