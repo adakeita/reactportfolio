@@ -1,0 +1,173 @@
+.project-card-container {
+	position: relative;
+	height: 385px;
+	max-width: 380px;
+	margin: 1rem auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.project-card-container p {
+	font-family: "Indie Flower", cursive;
+}
+
+/*-----IMAGE-SECTION -----*/
+
+.styling-wrapper_project-card {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+.img-section_project-card {
+	width: 100%;
+	height: 100%;
+	padding: 1rem 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	background: #ffffff;
+	box-shadow: 5px 4px 6px #070a11;
+}
+
+.img-wrapper_project-card {
+	width: 48%;
+	height: 100%;
+	border: 2px solid #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e5e4e4;
+}
+
+.img-wrapper_project-card img {
+	width: 100%;
+	height: 100%;
+}
+
+.logo_project-card {
+	padding: 0.5rem;
+	object-fit: scale-down;
+	filter: drop-shadow(2px 4px 6px black);
+}
+
+.scr_project-card {
+	object-fit: cover;
+	filter: grayscale(1);
+}
+
+/*-----INFO-BOXES _IMAGE-----*/
+
+.info-section_project-card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info-text-wrapper_project-card {
+	width: 100%;
+	display: flex;
+}
+
+.desc-wrapper_project-card {
+	justify-content: center;
+	align-items: center;
+}
+
+.tech-wrapper_project-card {
+	margin: 5px 0 0px 4px;
+	justify-content: flex-start;
+}
+
+.desc_project-card,
+.stack_project-card {
+	border: 1px solid #181818;
+	color: black;
+	box-shadow: 2px 3px 5px rgb(0 0 0 / 45%);
+	padding: 0.5rem 1rem;
+	background: #ffffff;
+}
+
+.desc_project-card {
+	width: 90%;
+	margin-bottom: 0.8rem;
+	box-shadow: 3px 2px 2px rgb(0 0 0 / 49%);
+}
+
+.stack_project-card {
+	margin: 0;
+}
+
+/*-----LINKS-SECTION-----*/
+
+.link-wrapper_project-card {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.links_project-card {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+}
+
+.project-link {
+	width: 38%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	background: white;
+	color: #000000;
+	padding: 0 0.5rem;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	transition: all 0.5s ease-in-out;
+	position: relative;
+}
+
+.project-link img.github-logo {
+	display: block;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.project-link img.github-logo-black {
+	opacity: 1;
+}
+
+.project-link img.github-logo-white {
+	width: 95%;
+	opacity: 0;
+	position: absolute;
+}
+
+.project-link:hover img.github-logo-black {
+	opacity: 0;
+}
+
+.project-link:hover img.github-logo-white {
+	opacity: 1;
+}
+
+.project-link:hover {
+	scale: 1.1;
+	rotate: 3deg;
+	background: url("../../assets/img/contact-bgr.png");
+	background-size: cover;
+	border-color: white;
+}
+
+@media screen and (max-width: 768px) {
+	.project-card-container {
+		width: 100%;
+		max-width: 350px;
+	}
+}

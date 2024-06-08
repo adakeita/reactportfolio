@@ -1,0 +1,59 @@
+.hero-section {
+	width: 100%;
+	gap: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+	border-left: 2px solid;
+}
+
+.hero-txt {
+	width: 50%;
+}
+
+.hero-txt h1 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.hero-txt p {
+	font-family: "indie flower", cursive;
+	font-size: 1.2rem;
+}
+
+.hero-image-wrapper {
+	width: 50%;
+	height: auto;
+	border-left: 2px solid;
+	border-right: 2px solid;
+}
+
+.hero-image {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.about-me,
+.skills,
+.featured-project,
+.contact {
+	margin: 4em auto;
+	width: 90%;
+	text-align: center;
+}
+
+.about-me {
+	line-height: 1.7;
+	text-align: left;
+}
+
+.about-me h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
