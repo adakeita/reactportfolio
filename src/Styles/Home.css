@@ -12,15 +12,16 @@
 }
 
 .hero-txt h1 {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	margin-bottom: 1rem;
 }
 
 .hero-txt p {
-	width: 60%;
+	max-width: 80%;
 	margin: 0 auto;
+	padding: 0.25rem 1rem;
 	font-family: "indie flower", cursive;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	background: white;
 	color: black;
 	border: 2px solid black;
@@ -37,21 +38,138 @@
 	vertical-align: bottom;
 }
 
+.page-content_home {
+	width: 80% !important;
+	max-width: 1240px !important;
+}
+
 .about-me,
 .skills,
 .featured-project,
 .contact {
-	margin: 4em auto;
-	width: 90%;
-	text-align: center;
+	margin: 0 auto 4.5rem;
+	text-align: left;
 }
 
 .about-me {
+	max-width: 750px;
+	margin: 4rem 0 6rem;
 	line-height: 1.7;
 	text-align: left;
 }
 
 .about-me h2 {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	margin-bottom: 0.5rem;
+}
+
+.about-me p {
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+}
+
+.header_featured {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.contact_home {
+	height: 300px;
+	border-top: 10px solid white;
+	border-bottom: 10px solid white;
+	margin: 0 auto;
+	width: 100%;
+	background-image: url("../assets/img/contact-bgr.png");
+	background-size: cover;
+}
+
+.contact_home h2 {
+	font-size: 2.5rem;
+	text-align: left;
+}
+
+.contact p {
+	margin-bottom: 10px;
+}
+
+.contact-content-wrapper_home {
+	width: 85%;
+	max-width: 1100px;
+	margin: 1.5rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.contact-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.github-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.github-img-wrapper {
+	width: 100%;
+	max-width: 115px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.github-logo {
+	width: 100%;
+}
+
+.email-wrapper {
+	width: 50%;
+	height: 100%;
+	font-size: 19px;
+}
+
+@media screen and (max-width: 768px) {
+	.hero-section {
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.hero-txt {
+		width: 100%;
+		height: 30vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hero-image-wrapper {
+		width: 100%;
+		height: 35vh;
+	}
+
+	.hero-image {
+		width: 90%;
+		max-width: 625px;
+		height: 100%;
+		margin: 0 auto;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	.hero-txt h1 {
+		font-size: 2rem;
+	}
+
+	.hero-txt p {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1100px) {
 }

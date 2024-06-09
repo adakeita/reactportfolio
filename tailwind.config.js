@@ -3,7 +3,11 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	prefix: "tw-",
 	theme: {
-		extend: {},
+		extend: {
+			screens: {
+				'xs': '540px',
+			  },
+		},
 	},
 	corePlugins: {},
 	plugins: [],
