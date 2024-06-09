@@ -1,3 +1,67 @@
+/* -----------KEYFRAMES--------- */
+@keyframes zoomIn {
+	from {
+		transform: scale(0.9);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeInText {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* ---------GENERAL STYLES--------- */
+.page-content_home {
+	width: 80% !important;
+	max-width: 1240px !important;
+}
+
+.about-me,
+.skills,
+.featured-project,
+.contact {
+	margin: 0 auto 4.5rem;
+	text-align: left;
+}
+
+.hero-section,
+.about-me,
+.featured-projects,
+.contact_home {
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+/*------ HERO SECTION-------- */
 .hero-section {
 	width: 100%;
 	display: flex;
@@ -5,6 +69,7 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	animation: slideInLeft 1s ease-in-out;
 }
 
 .hero-txt {
@@ -31,6 +96,7 @@
 	width: 50%;
 	height: auto;
 	border: 14px solid black;
+	animation: zoomIn 1.5s ease-in-out;
 }
 
 .hero-image {
@@ -38,24 +104,14 @@
 	vertical-align: bottom;
 }
 
-.page-content_home {
-	width: 80% !important;
-	max-width: 1240px !important;
-}
-
-.about-me,
-.skills,
-.featured-project,
-.contact {
-	margin: 0 auto 4.5rem;
-	text-align: left;
-}
-
+/* --------------ABOUT ME SECTION---------- */
 .about-me {
 	max-width: 750px;
 	margin: 4rem 0 6rem;
 	line-height: 1.7;
 	text-align: left;
+	animation: slideInRight 1s ease-in-out;
+	animation-delay: 0.5s;
 }
 
 .about-me h2 {
@@ -65,14 +121,21 @@
 
 .about-me p {
 	font-size: 1.1rem;
-	margin-bottom: 1.5rem;
+	overflow: hidden;
 }
 
+/* ------------FEATURED PROJECTS------ */
 .header_featured {
 	font-size: 2rem;
 	margin-bottom: 1rem;
 }
 
+.featured-projects {
+	animation: slideInLeft 1s ease-in-out;
+	animation-delay: 1s;
+}
+
+/* -----------CONTACT SECTION------- */
 .contact_home {
 	height: 300px;
 	border-top: 10px solid white;
@@ -81,6 +144,8 @@
 	width: 100%;
 	background-image: url("../assets/img/contact-bgr.png");
 	background-size: cover;
+	animation: slideInRight 1s ease-in-out;
+	animation-delay: 1.5s;
 }
 
 .contact_home h2 {
@@ -103,11 +168,11 @@
 }
 
 .contact-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .github-wrapper {
@@ -134,6 +199,7 @@
 	font-size: 19px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 768px) {
 	.hero-section {
 		flex-direction: column;
