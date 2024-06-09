@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Skills from "../components/Skills/Skills";
 import FeaturedProjectCard from "../components/FeaturedProjectCard/FeaturedProjectCard";
 import featuredData from "../data/featuredData";
@@ -18,26 +18,31 @@ const Home = () => {
   };
 
   useEffect(() => {
+    sectionsRef.current.forEach((section) => {
+      section.classList.add("initial");
+    });
+
     const options = {
-      threshold: 0.1
+      threshold: 0.1,
+      rootMargin: "0px 0px -200px 0px", // Adjust the margin to trigger earlier
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateX(0)';
+          entry.target.classList.add("in-view");
+          entry.target.classList.remove("initial");
           observer.unobserve(entry.target);
         }
       });
     }, options);
 
-    sectionsRef.current.forEach(section => {
+    sectionsRef.current.forEach((section) => {
       observer.observe(section);
     });
 
     return () => {
-      sectionsRef.current.forEach(section => {
+      sectionsRef.current.forEach((section) => {
         observer.unobserve(section);
       });
     };
@@ -61,7 +66,7 @@ const Home = () => {
       <div className="page-content page-content_home">
         <section className="about-me" role="article" ref={addToRefs}>
           <h2>WebDev Origin Story</h2>
-          <p  className="typewriter-text text_about-me">
+          <p className="typewriter-text text_about-me">
             At the age of 28, Ada Keita&apos;s life took an unexpected turn. A
             mysterious code in a dusty old book caught her eye, a language she
             later discovered to be JavaScript. Intrigued, she embarked on a
@@ -83,7 +88,7 @@ const Home = () => {
           <div
             className="featured-projects-container
                     tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-6"
-            role="list" 
+            role="list"
           >
             {featuredData.map((project, index) => (
               <FeaturedProjectCard
