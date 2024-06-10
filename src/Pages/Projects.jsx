@@ -13,12 +13,13 @@ const Projects = () => {
 			</div>
 			<section className="noroff-wrapper_project-page">
 				<h2 className="section-header_projectpage">Noroff Projects</h2>
-				<div className="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-6" role="list">
+				<div className="" role="list">
 					{projectData.map((project, index) => (
 						<ProjectCard
 							key={index}
 							title={project.title}
 							description={project.description}
+							longDescription={project.longDescription}
 							screenshotUrl={project.screenshotUrl}
 							imageUrl={project.imageUrl}
 							githubUrl={project.githubUrl}
