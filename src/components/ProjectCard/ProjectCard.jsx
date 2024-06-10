@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import GitHub from "../../assets/outside-logos/github-black.png";
 import GitHubWhite from "../../assets/outside-logos/github-white.png";
+import { Link } from "react-router-dom";
 import "./ProjectCard.css";
 
 const ProjectCard = ({
@@ -12,40 +13,44 @@ const ProjectCard = ({
   githubUrl,
   liveUrl,
   stack,
+  year,
 }) => {
   return (
     <article className="project-card-container">
-      <div className="card_project-card">
-        <div className="styling-wrapper_project-card">
-          <div className="img-section_project-card">
-            <figure className="img-wrapper_project-card logo-wrapper_project-card">
-              <img
-                className="logo_project-card"
-                src={imageUrl}
-                alt={`${title} logo`}
-              />
-            </figure>
-            <figure className="img-wrapper_project-card     scr-wrapper_project-card">
-              <img
-                className="scr_project-card"
-                src={screenshotUrl}
-                alt={`${title} screenshot`}
-              />
-            </figure>
-          </div>
-          <div className="info-section_project-card">
-            <div className="tech-wrapper_project-card info-text-wrapper_project-card">
-              <p className="stack_project-card">{stack}</p>
+      <Link to={liveUrl} className="card-link_project-card">
+        <div className="card_project-card">
+          <div className="styling-wrapper_project-card">
+            <div className="img-section_project-card">
+              <figure className="img-wrapper_project-card logo-wrapper_project-card">
+                <img
+                  className="logo_project-card"
+                  src={imageUrl}
+                  alt={`${title} logo`}
+                />
+              </figure>
+              <figure className="img-wrapper_project-card scr-wrapper_project-card">
+                <img
+                  className="scr_project-card"
+                  src={screenshotUrl}
+                  alt={`${title} screenshot`}
+                />
+              </figure>
             </div>
-            <div className="desc-wrapper_project-card                     info-text-wrapper_project-card">
-              <p className="desc_project-card">{description}</p>
+            <div className="info-section_project-card">
+              <div className="tech-wrapper_project-card info-text-wrapper_project-card">
+                <p className="stack_project-card">{stack}</p>
+              </div>
+              <div className="desc-wrapper_project-card info-text-wrapper_project-card">
+                <p className="desc_project-card">{description}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Link>
       <div className="divider_project-card">
         <div className="project-header_project-card">
           <h3 className="title_project-card">{title}</h3>
+          <p className="year_project-card">{year}</p>
         </div>
         <section className="text-section_project-card">
           <div className="long-text_project-card">
@@ -98,6 +103,7 @@ ProjectCard.propTypes = {
   githubUrl: PropTypes.string.isRequired,
   liveUrl: PropTypes.string,
   stack: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;

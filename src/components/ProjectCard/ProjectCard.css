@@ -1,10 +1,10 @@
 .project-card-container {
 	width: 100%;
-	max-width: 900px;
+	max-width: 1300px;
 	height: 400px;
 	gap: 30px;
-	margin: 6rem 0;
-	padding: 0 1rem;
+	margin: 0 0 5.5rem;
+	padding: 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -12,10 +12,16 @@
 	background: rgba(0, 0, 0, 0.333);
 }
 
+.card-link_project-card {
+	width: 75%;
+	max-width: 600px;
+	height: 100%;
+}
+
 .card_project-card {
 	position: relative;
 	height: 100%;
-	width: 55%;
+	width: 100%;
 	gap: 10px;
 	overflow: hidden;
 	display: flex;
@@ -23,7 +29,9 @@
 }
 
 .card_project-card p {
-	font-family: "Indie Flower", cursive;
+	font-family: "Short Stack", cursive;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
 
 /*-----IMAGE-SECTION -----*/
@@ -54,14 +62,16 @@
 	align-items: center;
 	justify-content: center;
 	background: #e5e4e4;
+	background: url("../../assets/img/dot-bgr.png");
+	background-size: contain;
 }
 
 .logo-wrapper_project-card {
-	width: 45%;
+	width: 40%;
 }
 
 .scr-wrapper_project-card {
-	width: 60%;
+	width: 70%;
 }
 
 .img-wrapper_project-card img {
@@ -112,13 +122,13 @@
 	box-shadow: 2px 3px 5px rgb(0 0 0 / 45%);
 	padding: 1rem;
 	background: #ffffff;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 }
 
 .desc_project-card {
-	width: 90%;
+	width: 80%;
 	margin-bottom: 0.6rem;
-	box-shadow: 3px 2px 2px rgb(0 0 0 / 49%);
+	box-shadow: 4px 4px 1px rgb(0 0 0 / 49%);
 }
 
 .stack_project-card {
@@ -206,6 +216,34 @@
 	border-color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
+	.project-card-container {
+		margin: 0 auto 4.5rem;
+	}
 
+	.card-link_project-card {
+		width: 100%;
+	}
+
+	.divider_project-card {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.project-card-container {
+		height: 700px;
+		gap: 10px;
+		flex-direction: column;
+	}
+
+	.card-link_project-card {
+		width: 100%;
+		max-width: unset;
+		height: 50%;
+	}
+
+	.divider_project-card {
+		width: 100%;
+	}
 }

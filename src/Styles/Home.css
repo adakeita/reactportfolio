@@ -17,6 +17,24 @@
 	}
 }
 
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
 /* ---------GENERAL STYLES--------- */
 .page-content_home {
 	width: 80% !important;
@@ -32,41 +50,38 @@
 }
 
 .hero-section,
-.about-me,
-.featured-projects,
-.contact_home {
+.about-me-section,
+.featured-projects-section,
+.contact-home-section {
 	opacity: 0;
 	transition:
 		opacity 1s ease-in-out,
 		transform 1s ease-in-out;
-	transform: translateX(0); /* initial position */
 }
 
-.hero-section.initial {
+.initial {
+	transform: translateX(0);
+}
+
+.slide-in-left.initial {
 	transform: translateX(-100%);
 }
 
-.about-me.initial {
+.slide-in-right.initial {
 	transform: translateX(100%);
 }
 
-.featured-projects.initial {
-	transform: translateX(-100%);
-}
-
-.contact_home.initial {
+.fade-in.initial {
+	opacity: 0;
 	transform: translateY(20%);
 }
 
-.hero-section.in-view,
-.about-me.in-view,
-.featured-projects.in-view,
-.contact_home.in-view {
+.in-view {
 	opacity: 1;
 	transform: translateX(0);
 }
 
-.contact_home.in-view {
+.fade-in.in-view {
 	transform: translateY(0);
 }
 
@@ -78,6 +93,7 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	opacity: 1; /* Ensure the hero section is always visible */
 }
 
 .hero-txt {
@@ -145,7 +161,6 @@
 	width: 100%;
 	background-image: url("../assets/img/contact-bgr.png");
 	background-size: cover;
-	transform: translateY(20%);
 }
 
 .contact_home h2 {

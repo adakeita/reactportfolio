@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Indie+Flower&family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Short+Stack&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -37,7 +37,7 @@ body {
 	margin: 0;
 	background-color: black;
 	color: white;
-	font-family: inter;
+	font-family: "Lato", sans-serif;
 }
 
 #root {
@@ -83,6 +83,10 @@ h3,
 h4 {
 	font-family: "Bangers";
 	color: var(--light-bgr);
+}
+
+p {
+	font-size: 1.2rem;
 }
 
 .modal {

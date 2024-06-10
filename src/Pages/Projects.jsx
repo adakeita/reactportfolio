@@ -1,5 +1,6 @@
 import ProjectCard from '../components/ProjectCard/ProjectCard';
 import projectData from '../data/projectData';
+import personalProjectData from '../data/personalProjectData';
 import '../Styles/Projects.css';
 
 const Projects = () => {
@@ -18,6 +19,7 @@ const Projects = () => {
 						<ProjectCard
 							key={index}
 							title={project.title}
+							year={project.year}
 							description={project.description}
 							longDescription={project.longDescription}
 							screenshotUrl={project.screenshotUrl}
@@ -31,6 +33,24 @@ const Projects = () => {
 				</div>
 			</section>
 			<section className="other-wrapper_projects-page">
+				<h2 className="section-header_projectpage">Personal Projects</h2>
+				<div className="" role="list">
+					{personalProjectData.map((project, index) => (
+						<ProjectCard
+							key={index}
+							title={project.title}
+							year='2023-now'
+							description={project.description}
+							screenshotUrl={project.screenshotUrl}
+							longDescription={project.longDescription}
+							imageUrl={project.imageUrl}
+							githubUrl={project.githubUrl}
+							liveUrl={project.liveUrl}
+							stack={project.stack}
+							role="listitem"
+						/>
+					))}
+				</div>
 			</section>
 		</div>
 	);
