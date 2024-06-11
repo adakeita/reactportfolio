@@ -21,14 +21,13 @@ You can view the live demo of the portfolio [here](https://devadakeita.netlify.a
 - Responsive design for various devices
 - Smooth scrolling navigation
 - Project showcase with detailed descriptions
-- Contact section with email and GitHub links
+- Contact section with email and GitHub link
 
 ## Technologies Used
 
 - ReactJS
 - CSS and TailwindCSS
 - HTML
-- Supabase (for some projects)
 - Vite
 
 ## Getting Started
