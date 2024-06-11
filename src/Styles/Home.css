@@ -106,10 +106,10 @@
 }
 
 .hero-txt p {
-	max-width: 80%;
+	width: 50%;
 	margin: 0 auto;
 	padding: 0.25rem 1rem;
-	font-family: "indie flower", cursive;
+	font-family: "Short Stack", cursive;
 	font-size: 1.5rem;
 	background: white;
 	color: black;
@@ -244,10 +244,14 @@
 	}
 
 	.hero-txt h1 {
-		font-size: 2rem;
+		width: 90%;
+		margin: 0 auto 1.5rem;
+		font-size: 2.75rem;
 	}
 
 	.hero-txt p {
+		width: 90%;
+		max-width: 250px;
 		font-size: 1rem;
 	}
 }
