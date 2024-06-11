@@ -14,7 +14,7 @@ const Projects = () => {
 			</div>
 			<section className="noroff-wrapper_project-page">
 				<h2 className="section-header_projectpage">Noroff Projects</h2>
-				<div className="" role="list">
+				<div className="projectcard-wrapper_projects" role="list">
 					{projectData.map((project, index) => (
 						<ProjectCard
 							key={index}
@@ -33,8 +33,8 @@ const Projects = () => {
 				</div>
 			</section>
 			<section className="other-wrapper_projects-page">
-				<h2 className="section-header_projectpage">Personal Projects</h2>
-				<div className="" role="list">
+				<h2 className="section-header_projectpage">Passion Project</h2>
+				<div className="projectcard-wrapper_projects" role="list">
 					{personalProjectData.map((project, index) => (
 						<ProjectCard
 							key={index}

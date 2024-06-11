@@ -12,6 +12,8 @@
 
 .project-card-container_featured p {
 	font-family: "Short Stack", cursive;
+	text-transform: uppercase;
+	font-size: 1rem;
 }
 
 /*-----IMAGE-SECTION -----*/

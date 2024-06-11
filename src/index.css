@@ -37,7 +37,6 @@ body {
 	margin: 0;
 	background-color: black;
 	color: white;
-	font-family: "Lato", sans-serif;
 }
 
 #root {
@@ -87,6 +86,7 @@ h4 {
 
 p {
 	font-size: 1.2rem;
+	font-family: "Lato";
 }
 
 .modal {

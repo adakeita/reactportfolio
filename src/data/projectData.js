@@ -1,5 +1,3 @@
-import screenshotSquareEyes from "../assets/projectscreensht/screenshot-squareeyes.png";
-import logoWhiteBlue from "../assets/projectimg/logo-white-blue.png";
 import screenshotSoilmates from "../assets/projectscreensht/screenshot-soilmates.png";
 import soilmatesLogo from "../assets/projectimg/soilmates-logo2.png";
 import screenshotMuseum from "../assets/projectscreensht/scr-museum.png";
@@ -10,6 +8,8 @@ import btwLogo from "../assets/projectimg/btw-small.svg";
 import screenshotBtw from "../assets/projectscreensht/buy-scre.png";
 import holidazeLogo from "../assets/projectimg/holidaze.png";
 import holidazeScreenshot from "../assets/projectscreensht/holidaze-scr.png";
+import portfolioLogo from "../assets/svg/adakeita-logo.svg";
+import screenshotPortfolio from "../assets/projectscreensht/portfolio-scre.png";
 
 const projectData = [
   {
@@ -43,10 +43,10 @@ const projectData = [
     description: "My actual portfolio, hi!",
     longDescription:
       "Portfolio is my portfolio. You're on it right now! The design was done mostly in figma, and some of it just in my head. Its a straight up vanilla react project with some custom css and a dash ow tailwind. I'm very happy with how it turned out and how is shows my personality. Hope you like it too!",
-    screenshotUrl: goingScreenshot,
-    imageUrl: goingLogo,
-    githubUrl: "",
-    liveUrl: "",
+    screenshotUrl: screenshotPortfolio,
+    imageUrl: portfolioLogo,
+    githubUrl: "https://github.com/adakeita/reactportfolio",
+    liveUrl: "https://devadakeita.netlify.app/",
     stack: "ReactJS, TailwindCSS, Custom CSS.",
   },
   {
@@ -74,18 +74,6 @@ const projectData = [
     githubUrl: "https://github.com/adakeita/",
     liveUrl: "https://goingtwice.netlify.app/",
     stack: "ReactJS, Tailwind, Custom CSS.",
-  },
-  {
-    title: "SquareEyes",
-    year: "2022",
-    description: "Streaming platform for smaller studios",
-    longDescription:
-      "SquareEyes is a mockup of a streaming platform, And it aws one of my first larger projects I had at Noroff. It was tasked as a streaming platform geared towards smaller studios and individual clients, where you can watch movies and purchase movies. I made this project in 2021. its fun to look back at the project and see how much I have learned since then.",
-    screenshotUrl: screenshotSquareEyes,
-    imageUrl: logoWhiteBlue,
-    githubUrl: "https://github.com/adakeita/squareeyes",
-    liveUrl: "https://casquareeyes.netlify.app/",
-    stack: "HTML, CSS, JS.",
   },
   {
     title: "Community Museum",

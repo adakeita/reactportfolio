@@ -49,6 +49,10 @@
 	text-align: left;
 }
 
+.about-me h2, .skills h2, .featured-projects h2, .contact h2 {
+	color: #C3EFE8;
+}
+
 .hero-section,
 .about-me-section,
 .featured-projects-section,
@@ -106,14 +110,16 @@
 }
 
 .hero-txt p {
-	width: 50%;
+	width: 65%;
+	max-width: 335px;
 	margin: 0 auto;
 	padding: 0.25rem 1rem;
 	font-family: "Short Stack", cursive;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	background: white;
 	color: black;
 	border: 2px solid black;
+	text-transform: uppercase;
 }
 
 .hero-image-wrapper {
@@ -142,14 +148,32 @@
 }
 
 .about-me p {
+	margin-bottom: 1.5rem;
 	font-size: 1.1rem;
 	overflow: hidden;
+
 }
 
 /* ------------FEATURED PROJECTS------ */
 .header_featured {
 	font-size: 2rem;
 	margin-bottom: 1rem;
+}
+
+.more-projects-wrapper {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: end;
+}
+
+.more-projects-link_home {
+	font-family: "Bangers", cursive;
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+	color: black;
+	background: white;
+	border: 1.5px solid black;
+	box-shadow: 4px 4px 0 #437594;
 }
 
 /* -----------CONTACT SECTION------- */

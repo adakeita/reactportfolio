@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import PortfolioLogo from "../../assets/img/adakeita-logo.png";
+import PortfolioLogo from "../../assets/svg/adakeita-logo.svg";
 import Menu from "../../assets/svg/menu.svg";
 import Close from "../../assets/svg/close.svg";
 import "./Header.css";

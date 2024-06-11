@@ -4,6 +4,7 @@ import FeaturedProjectCard from "../components/FeaturedProjectCard/FeaturedProje
 import featuredData from "../data/featuredData";
 import HeroImg from "../assets/img/graphic-ada.png";
 import GithubLogo from "../assets/outside-logos/github-mark-white.png";
+import { Link } from "react-router-dom";
 import "../Styles/Home.css";
 
 const Section = ({
@@ -86,6 +87,11 @@ const Home = () => {
                   stack={project.stack}
                 />
               ))}
+            </div>
+            <div className="more-projects-wrapper">
+              <Link to="/projects" className="more-projects-link_home">
+                View all projects
+              </Link>
             </div>
           </section>
         </ViewportSection>
