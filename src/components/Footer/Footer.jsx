@@ -1,6 +1,8 @@
+import "./Footer.css"
+
 const Footer = () => (
     <footer id="footer">
-        <p>Copyright &copy; 2023 Ada Mathilde Keita</p>
+        <p>&copy; 2024 Ada Mathilde Keita</p>
     </footer>
 );
 
