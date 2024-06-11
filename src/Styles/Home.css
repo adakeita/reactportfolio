@@ -1,7 +1,7 @@
 /* -----------KEYFRAMES--------- */
 @keyframes zoomIn {
 	from {
-		transform: scale(0.9);
+		transform: scale(0.8);
 	}
 	to {
 		transform: scale(1);
@@ -93,7 +93,7 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	opacity: 1; /* Ensure the hero section is always visible */
+	opacity: 1;
 }
 
 .hero-txt {

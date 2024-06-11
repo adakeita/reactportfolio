@@ -1,11 +1,9 @@
-import React from "react";
 import handleViewport from "react-in-viewport";
 import Skills from "../components/Skills/Skills";
 import FeaturedProjectCard from "../components/FeaturedProjectCard/FeaturedProjectCard";
 import featuredData from "../data/featuredData";
 import HeroImg from "../assets/img/graphic-ada.png";
 import GithubLogo from "../assets/outside-logos/github-mark-white.png";
-
 import "../Styles/Home.css";
 
 const Section = ({
