@@ -117,7 +117,7 @@
 
 .desc_project-card,
 .stack_project-card {
-	border: 1px solid #181818;
+	border: 2px solid #181818;
 	color: black;
 	box-shadow: 2px 3px 5px rgb(0 0 0 / 45%);
 	padding: 1rem;
