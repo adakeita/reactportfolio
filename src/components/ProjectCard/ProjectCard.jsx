@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import GitHub from "../../assets/outside-logos/github-black.png";
 import GitHubWhite from "../../assets/outside-logos/github-white.png";
-import { Link } from "react-router-dom";
 import "./ProjectCard.css";
 
 const ProjectCard = ({
+  id,
   title,
   description,
   longDescription,
@@ -15,38 +15,37 @@ const ProjectCard = ({
   stack,
   year,
 }) => {
+  console.log(`ProjectCard ID: ${id}`);
   return (
-    <article className="project-card-container">
-      <Link to={liveUrl} className="card-link_project-card">
-        <div className="card_project-card">
-          <div className="styling-wrapper_project-card">
-            <div className="img-section_project-card">
-              <figure className="img-wrapper_project-card logo-wrapper_project-card">
-                <img
-                  className="logo_project-card"
-                  src={imageUrl}
-                  alt={`${title} logo`}
-                />
-              </figure>
-              <figure className="img-wrapper_project-card scr-wrapper_project-card">
-                <img
-                  className="scr_project-card"
-                  src={screenshotUrl}
-                  alt={`${title} screenshot`}
-                />
-              </figure>
+    <article id={id} className="project-card-container">
+      <div className="card_project-card">
+        <div className="styling-wrapper_project-card">
+          <div className="img-section_project-card">
+            <figure className="img-wrapper_project-card logo-wrapper_project-card">
+              <img
+                className="logo_project-card"
+                src={imageUrl}
+                alt={`${title} logo`}
+              />
+            </figure>
+            <figure className="img-wrapper_project-card scr-wrapper_project-card">
+              <img
+                className="scr_project-card"
+                src={screenshotUrl}
+                alt={`${title} screenshot`}
+              />
+            </figure>
+          </div>
+          <div className="info-section_project-card">
+            <div className="tech-wrapper_project-card info-text-wrapper_project-card">
+              <p className="stack_project-card">{stack}</p>
             </div>
-            <div className="info-section_project-card">
-              <div className="tech-wrapper_project-card info-text-wrapper_project-card">
-                <p className="stack_project-card">{stack}</p>
-              </div>
-              <div className="desc-wrapper_project-card info-text-wrapper_project-card">
-                <p className="desc_project-card">{description}</p>
-              </div>
+            <div className="desc-wrapper_project-card info-text-wrapper_project-card">
+              <p className="desc_project-card">{description}</p>
             </div>
           </div>
         </div>
-      </Link>
+      </div>
       <div className="divider_project-card">
         <div className="project-header_project-card">
           <h3 className="title_project-card">{title}</h3>
@@ -61,7 +60,7 @@ const ProjectCard = ({
           <div className="links_project-card">
             <a
               href={githubUrl}
-              className="project-link"
+              className="project-link github-link_project-card"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`GitHub repository for ${title}`}
@@ -80,7 +79,7 @@ const ProjectCard = ({
             {liveUrl && (
               <a
                 href={liveUrl}
-                className="project-link"
+                className="project-link livesite-link_project-card"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Live site for ${title}`}
@@ -96,6 +95,7 @@ const ProjectCard = ({
 };
 
 ProjectCard.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   screenshotUrl: PropTypes.string.isRequired,

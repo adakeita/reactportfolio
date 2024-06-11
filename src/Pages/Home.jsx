@@ -47,7 +47,7 @@ const Home = () => {
           <section className="about-me" aria-labelledby="about-me-heading">
             <h2 id="about-me-heading">WebDev Origin Story</h2>
             <p className="typewriter-text text_about-me">
-              At the age of 28, Ada Keita&apos;s life took an unexpected turn. A
+              Some years ago, Ada Keita&apos;s life took an unexpected turn. A
               mysterious code in a dusty old book caught her eye, a language she
               later discovered to be JavaScript. Intrigued, she embarked on a
               quest to decipher the language, enrolling in Noroff, a renowned
@@ -80,17 +80,17 @@ const Home = () => {
               {featuredData.map((project, index) => (
                 <FeaturedProjectCard
                   key={index}
+                  id={project.id}
                   title={project.title}
                   description={project.description}
                   screenshotUrl={project.screenshotUrl}
                   imageUrl={project.imageUrl}
-                  stack={project.stack}
                 />
               ))}
             </div>
             <div className="more-projects-wrapper">
               <Link to="/projects" className="more-projects-link_home">
-                View all projects
+                More Projects
               </Link>
             </div>
           </section>

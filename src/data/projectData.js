@@ -13,7 +13,7 @@ import screenshotPortfolio from "../assets/projectscreensht/portfolio-scre.png";
 
 const projectData = [
   {
-    id:2,
+    id: 2,
     title: "Holidaze",
     year: "2024",
     description: "Holidaze is a mockup of a booking site for hotels",
@@ -26,6 +26,7 @@ const projectData = [
     stack: "ReactJS, TailwindCSS, Custom CSS.",
   },
   {
+    id: 4,
     title: "BuyTheWay",
     year: "2024",
     description: "BuyTheWay is a mockup of a webshop",
@@ -38,6 +39,7 @@ const projectData = [
     stack: "ReactJS, TailwindCSS, Custom CSS.",
   },
   {
+    id: 5,
     title: "Portfolio",
     year: "2024",
     description: "My actual portfolio, hi!",
@@ -50,6 +52,7 @@ const projectData = [
     stack: "ReactJS, TailwindCSS, Custom CSS.",
   },
   {
+    id:6,
     title: "Soilmates",
     year: "2023",
     description: "Soilmates, plants and gardening blogsite",
@@ -63,7 +66,7 @@ const projectData = [
     stack: "HTML, CSS, JS.",
   },
   {
-    id:1,
+    id: 1,
     title: "GoingTwice",
     year: "2023",
     description: "Auction site for preloved items",
@@ -76,6 +79,7 @@ const projectData = [
     stack: "ReactJS, Tailwind, Custom CSS.",
   },
   {
+    id: 7,
     title: "Community Museum",
     year: "2022",
     description: "Science museum for kids and families",
@@ -84,7 +88,7 @@ const projectData = [
     screenshotUrl: screenshotMuseum,
     imageUrl: logoMuseum,
     githubUrl: "https://github.com/adakeita/communitymuseum",
-    liveUrl: "https://communitymuseum.netlify.app/",
+    liveUrl: "https://communitymuseumsa.netlify.app/",
     stack: "HTML, CSS.",
   },
 ];

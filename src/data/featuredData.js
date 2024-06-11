@@ -1,4 +1,3 @@
-
 import goingScreenshot from "../assets/projectscreensht/going-scr.png";
 import goingLogo from "../assets/projectimg/going-logo.png";
 import holidazeLogo from "../assets/projectimg/holidaze.png";
